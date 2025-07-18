@@ -1,0 +1,457 @@
+[
+  {
+    "id": "BL110-XL",
+    "name": "Designer Blouse",
+    "brand": "FabIndia",
+    "price": 1599,
+    "preview": "https://i.ibb.co/5g8b34YB/BLOUSE.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "BL003-50BLACK",
+    "name": "Classic Black Blouse",
+    "brand": "FabIndia",
+    "price": 1699,
+    "preview": "https://i.ibb.co/Q3bVgpsG/Designer-Black-Blouse.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "J0215-BL-L",
+    "name": "Elegant Blue Blouse",
+    "brand": "Biba",
+    "price": 1499,
+    "preview": "https://i.ibb.co/Sw21VJZc/Elegant-Blue-Blouse.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "BL017-63BLACK",
+    "name": "Designer Black Blouse",
+    "brand": "W for Women",
+    "price": 1799,
+    "preview": "https://i.ibb.co/hRp6Cr4m/black-blouse.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "BL001-50PINK",
+    "name": "Pink Embroidered Blouse",
+    "brand": "Meena Bazaar",
+    "price": 1899,
+    "preview": "https://i.ibb.co/hRZVQDFL/pink-meena-bazar.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "BTM038-PP-XXXL",
+    "name": "Printed Palazzo Pants",
+    "brand": "Biba",
+    "price": 1299,
+    "preview": "https://i.ibb.co/DHcHvBjm/biba-printed-pallazo.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "CH204-PURPLE-M",
+    "name": "Purple Cotton Churidar",
+    "brand": "W for Women",
+    "price": 1399,
+    "preview": "https://i.ibb.co/chrYHDNB/Purple-Cotton-Churidar.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "BTM044-PP-M",
+    "name": "Ethnic Printed Bottom",
+    "brand": "FabIndia",
+    "price": 1199,
+    "preview": "https://i.ibb.co/Z1N8f98v/Ethnic-Printed-Bottom.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "DPT052",
+    "name": "Silk Dupatta",
+    "brand": "W for Women",
+    "price": 999,
+    "preview": "https://i.ibb.co/Kc7n85HM/Silk-Dupatta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "DPT041",
+    "name": "Embroidered Dupatta",
+    "brand": "FabIndia",
+    "price": 1199,
+    "preview": "https://i.ibb.co/G3GXT4XW/Embroidered-Dupatta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "DPT032",
+    "name": "Chiffon Dupatta",
+    "brand": "Meena Bazaar",
+    "price": 899,
+    "preview": "https://i.ibb.co/qY3kN1s4/Chiffon-Dupatta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SAR114",
+    "name": "Silk Saree",
+    "brand": "FabIndia",
+    "price": 4999,
+    "preview": "https://i.ibb.co/sJg9h91V/Silk-Saree.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SAR040",
+    "name": "Cotton Saree",
+    "brand": "Biba",
+    "price": 2999,
+    "preview": "https://i.ibb.co/qMFz07JW/Cotton-Saree.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE09210-PINK-SR-JP8101RNV",
+    "name": "Pink Designer Saree",
+    "brand": "Meena Bazaar",
+    "price": 5999,
+    "preview": "https://i.ibb.co/YBdrsMcG/Pink-Designer-Saree.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE09186-BLUE-SR-JP7104RMV-N",
+    "name": "Blue Embroidered Saree",
+    "brand": "Manyavar",
+    "price": 6499,
+    "preview": "https://i.ibb.co/ZbT3Lzn/Blue-Embroidered-Saree.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SAR068",
+    "name": "Handloom Saree",
+    "brand": "FabIndia",
+    "price": 5299,
+    "preview": "https://i.ibb.co/Kj7hVN2Z/Handloom-Saree.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SAR066",
+    "name": "Chanderi Saree",
+    "brand": "W for Women",
+    "price": 4799,
+    "preview": "https://i.ibb.co/ccbqNkD9/Chanderi-Saree.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE1000-NAVY-SR-JB6102RMV-K",
+    "name": "Navy Blue Silk Saree",
+    "brand": "Meena Bazaar",
+    "price": 6999,
+    "preview": "https://i.ibb.co/5xkVm8jn/Navy-Blue-Silk-Saree.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SAR173",
+    "name": "Banarasi Saree",
+    "brand": "FabIndia",
+    "price": 7599,
+    "preview": "https://i.ibb.co/kkKSLWD/Banarasi-Silk-Saree.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SAR152",
+    "name": "Kanchipuram Silk Saree",
+    "brand": "Biba",
+    "price": 8199,
+    "preview": "https://i.ibb.co/39p650pF/Kanchipuram-Silk-Saree.jpg",
+    "isAccessory": false
+  },  
+
+  {
+    "id": "JNE3781-KR-XXXL",
+    "name": "Stylish Kurta",
+    "brand": "FabIndia",
+    "price": 1999,
+    "preview": "https://i.ibb.co/rKN5zJq5/Stylish-Kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3371-KR-XL",
+    "name": "Ethnic Embroidered Kurta",
+    "brand": "Biba",
+    "price": 2199,
+    "preview": "https://i.ibb.co/q3HvYCnj/Ethnic-Embroidered-Kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3405-KR-S",
+    "name": "Printed Cotton Kurta",
+    "brand": "W for Women",
+    "price": 1899,
+    "preview": "https://i.ibb.co/PdGGCbH/Printed-Cotton-Kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3461-KR-XXL",
+    "name": "Festive Kurta",
+    "brand": "Manyavar",
+    "price": 2499,
+    "preview": "https://i.ibb.co/Z6KB4Mcv/Festive-Kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3160-KR-G-S",
+    "name": "Designer Kurta",
+    "brand": "Meena Bazaar",
+    "price": 2099,
+    "preview": "https://i.ibb.co/VYzVmYfv/Designer-Kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3500-KR-XS",
+    "name": "Elegant Kurta",
+    "brand": "FabIndia",
+    "price": 1799,
+    "preview": "https://i.ibb.co/yBQn2pk9/Elegant-Kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3405-KR-XS",
+    "name": "Classic Kurta",
+    "brand": "W for Women",
+    "price": 1899,
+    "preview": "https://i.ibb.co/3YrLQKFk/Classic-Kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "PJNE3368-KR-6XL",
+    "name": "Long Kurta",
+    "brand": "Biba",
+    "price": 2299,
+    "preview": "https://i.ibb.co/7tCFDPDN/long-kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3721-KR-XXL",
+    "name": "Festive Cotton Kurta",
+    "brand": "Manyavar",
+    "price": 2399,
+    "preview": "https://i.ibb.co/fVsgktCR/festive-cotton-kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3405-KR-XL",
+    "name": "Casual Kurta",
+    "brand": "Meena Bazaar",
+    "price": 1899,
+    "preview": "https://i.ibb.co/SDBhYjmC/Casual-Kurta.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3697-KR-XXL",
+    "name": "Handcrafted Kurta",
+    "brand": "FabIndia",
+    "price": 2199,
+    "preview": "https://i.ibb.co/3XH6HQp/Handcrafted-Kurta.jpg",
+    "isAccessory": false
+  },
+
+  
+  {
+    "id": "SET389-KR-NP-S",
+    "name": "Traditional Kurta Set",
+    "brand": "FabIndia",
+    "price": 3499,
+    "preview": "https://i.ibb.co/VpcZ7qHd/Traditional-Kurta-Set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SET264-KR-NP-XL",
+    "name": "Ethnic Festive Kurta Set",
+    "brand": "Biba",
+    "price": 3799,
+    "preview": "https://i.ibb.co/TBZWM8Kg/Ethnic-Festive-Kurta-Set.jpg",
+    "isAccessory": false
+},
+  {
+    "id": "J0095-SET-L",
+    "name": "Designer Kurta Pant Set",
+    "brand": "Meena Bazaar",
+    "price": 3999,
+    "preview": "https://i.ibb.co/KzVZqt6t/Designer-Kurta-Pant-Set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SET200-KR-NP-A-XXXL",
+    "name": "Elegant Anarkali Set",
+    "brand": "W for Women",
+    "price": 4299,
+    "preview": "https://i.ibb.co/4nvCWxwv/Elegant-Anarkali-Set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SET182-KR-DH-XS",
+    "name": "Printed Dhoti Kurta Set",
+    "brand": "Manyavar",
+    "price": 3599,
+    "preview": "https://i.ibb.co/WCzsvHg/Printed-Dhoti-Kurta-Set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "J0351-SET-L",
+    "name": "Handloom Kurta Set",
+    "brand": "Biba",
+    "price": 4199,
+    "preview": "https://i.ibb.co/0yh7V5jT/handoom-kurta-set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SET254-KR-NP-XS",
+    "name": "Casual Cotton Kurta Set",
+    "brand": "FabIndia",
+    "price": 3299,
+    "preview": "https://i.ibb.co/7JDzCy2G/Casual-Cotton-Kurta-Set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SET345-KR-NP-M",
+    "name": "Embroidered Kurta Pant Set",
+    "brand": "W for Women",
+    "price": 3899,
+    "preview": "https://i.ibb.co/xtFzcDgx/Embroidered-Kurta-Pant-Set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SET291-KR-PP-M",
+    "name": "Printed Palazzo Kurta Set",
+    "brand": "Manyavar",
+    "price": 3699,
+    "preview": "https://i.ibb.co/zVgz4m78/Printed-Palazzo-Kurta-Set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "NW030-TP-PJ-XS",
+    "name": "Trendy Punjabi Suit Set",
+    "brand": "Meena Bazaar",
+    "price": 4099,
+    "preview": "https://i.ibb.co/4w0L9q2M/Trendy-Punjabi-Suit-Set.png",
+    "isAccessory": false
+  },
+  {
+    "id": "J0011-LCD-M",
+    "name": "Linen Chikankari Set",
+    "brand": "Biba",
+    "price": 4499,
+    "preview": "https://i.ibb.co/wZJkpHmp/Linen-Chikankari-Set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SET345-KR-NP-L",
+    "name": "Casual Ethnic Set",
+    "brand": "W for Women",
+    "price": 3799,
+    "preview": "https://i.ibb.co/9H97wTD2/Casual-Ethnic-Set.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "SET360-KR-NP-M",
+    "name": "Party Wear Kurta Set",
+    "brand": "FabIndia",
+    "price": 4599,
+    "preview": "https://i.ibb.co/d029mZDs/Party-Wear-Kurta-Set.jpg",
+    "isAccessory": false
+  },
+  
+    
+  {
+    "id": "JNE3671-TU-XXXL",
+    "name": "Traditional Tunic",
+    "brand": "FabIndia",
+    "price": 2599,
+    "preview": "https://i.ibb.co/d8F1dCp/traditional-tunic.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3744-TU-S",
+    "name": "Embroidered Short Tunic",
+    "brand": "Biba",
+    "price": 2399,
+    "preview": "https://i.ibb.co/9H5R2g3X/Embroidered-Short-Tunic.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "J0301-TP-L",
+    "name": "Printed Cotton Top",
+    "brand": "Meena Bazaar",
+    "price": 1999,
+    "preview": "https://i.ibb.co/Xx6C13k0/Printed-Cotton-Top.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3645-TP-N-L",
+    "name": "Ethnic Embroidered Top",
+    "brand": "W for Women",
+    "price": 2199,
+    "preview": "https://i.ibb.co/QjFt7sPX/Ethnic-Embroidered-Top.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3648-TP-N-M",
+    "name": "Floral Printed Top",
+    "brand": "Manyavar",
+    "price": 1799,
+    "preview": "https://i.ibb.co/TMYdWHhS/Floral-Printed-Top.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3654-TP-XL",
+    "name": "Casual Cotton Top",
+    "brand": "Biba",
+    "price": 1599,
+    "preview": "https://i.ibb.co/1YYms8DK/Casual-Cotton-Top.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "J0300-TP-XXXL",
+    "name": "Designer Festive Top",
+    "brand": "FabIndia",
+    "price": 2299,
+    "preview": "https://i.ibb.co/RGxBqZwC/designer-festive.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "J0113-TP-XS",
+    "name": "Handloom Cotton Top",
+    "brand": "W for Women",
+    "price": 1899,
+    "preview": "https://i.ibb.co/KjcGTwYV/Handloom-Cotton-Top.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "J0344-TP-XXXL",
+    "name": "Elegant Embroidered Top",
+    "brand": "Manyavar",
+    "price": 2099,
+    "preview": "https://i.ibb.co/hF3Q4rZg/Elegant-Embroidered-Top.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "J0118-TP-XXL",
+    "name": "Formal Ethnic Top",
+    "brand": "Meena Bazaar",
+    "price": 2199,
+    "preview": "https://i.ibb.co/7xJyWmVC/Formal-Ethnic-Top.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "JNE3654-TP-L",
+    "name": "Simple Cotton Top",
+    "brand": "Biba",
+    "price": 1699,
+    "preview": "https://i.ibb.co/ks5wD8f2/Simple-Cotton-Top.jpg",
+    "isAccessory": false
+  },
+  {
+    "id": "J0344-TP-L",
+    "name": "Casual Wear Top",
+    "brand": "FabIndia",
+    "price": 1799,
+    "preview": "https://i.ibb.co/ch8z4Z5H/Casual-Wear-Top.jpg",
+    "isAccessory": false
+  }
+    
+    
+]

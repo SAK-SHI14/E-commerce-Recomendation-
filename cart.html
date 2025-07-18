@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart | E-COMMERCE WEBSITE</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
+    <!-- CART CONTAINER -->
+    <div id="cartMainContainer">
+        <h1>Checkout</h1>
+        <h3 id="totalItem">Total Items: 0</h3>
+        <div id="cartContainer"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+    <script>
+        console.clear();
+
+        function updateCartBadge() {
+            let cartData = JSON.parse(localStorage.getItem("cart")) || {};
+            let totalItems = Object.values(cartData).reduce((sum, qty) => sum + qty, 0);
+            document.getElementById("totalItem").textContent = `Total Items: ${totalItems}`;
+        }
+
+        function updateCartDisplay() {
+            let cartContainer = document.getElementById("cartContainer");
+            cartContainer.innerHTML = "";
+            let cartData = JSON.parse(localStorage.getItem("cart")) || {};
+            fetch("products.json")
+                .then(response => response.json())
+                .then(products => {
+                    let totalAmount = 0;
+                    Object.keys(cartData).forEach(id => {
+                        let product = products.find(p => p.id.toString() === id);
+                        if (product) {
+                            let quantity = cartData[id];
+                            totalAmount += product.price * quantity;
+                            
+                            let itemDiv = document.createElement("div");
+                            itemDiv.className = "cart-item";
+                            
+                            let img = document.createElement("img");
+                            img.src = product.preview;
+                            img.alt = product.name;
+                            itemDiv.appendChild(img);
+                            
+                            let detailsDiv = document.createElement("div");
+                            detailsDiv.className = "item-details";
+                            
+                            let name = document.createElement("h3");
+                            name.textContent = product.name;
+                            detailsDiv.appendChild(name);
+                            
+                            let quantityControls = document.createElement("div");
+                            quantityControls.className = "quantity-controls";
+                            
+                            let minusBtn = document.createElement("button");
+                            minusBtn.textContent = "-";
+                            minusBtn.onclick = () => updateQuantity(id, -1);
+                            
+                            let quantityText = document.createElement("span");
+                            quantityText.textContent = ` × ${quantity}`;
+                            quantityText.id = `quantity-${id}`;
+                            
+                            let plusBtn = document.createElement("button");
+                            plusBtn.textContent = "+";
+                            plusBtn.onclick = () => updateQuantity(id, 1);
+                            
+                            quantityControls.appendChild(minusBtn);
+                            quantityControls.appendChild(quantityText);
+                            quantityControls.appendChild(plusBtn);
+                            detailsDiv.appendChild(quantityControls);
+                            
+                            let price = document.createElement("h4");
+                            price.textContent = `Amount: Rs ${product.price * quantity}`;
+                            price.id = `price-${id}`;
+                            detailsDiv.appendChild(price);
+                            
+                            itemDiv.appendChild(detailsDiv);
+                            cartContainer.appendChild(itemDiv);
+                        }
+                    });
+                    
+                    let totalDiv = document.createElement("div");
+                    totalDiv.id = "total";
+                    totalDiv.innerHTML = `<h2>Total Amount</h2><h4>Amount: Rs ${totalAmount}</h4>`;
+                    
+                    let button = document.createElement("button");
+                    button.textContent = "Place Order";
+                    button.onclick = () => {
+                        localStorage.removeItem("cart");
+                        updateCartBadge();
+                        updateCartDisplay();
+                        window.location.href = "/orderPlaced.html";
+                    };
+                    totalDiv.appendChild(button);
+                    cartContainer.appendChild(totalDiv);
+                    updateCartBadge();
+                })
+                .catch(error => console.error("Error Fetching Products:", error));
+        }
+
+        function updateQuantity(id, change) {
+            let cartData = JSON.parse(localStorage.getItem("cart")) || {};
+            if (cartData[id]) {
+                cartData[id] += change;
+                if (cartData[id] <= 0) delete cartData[id];
+            }
+            localStorage.setItem("cart", JSON.stringify(cartData));
+            updateCartDisplay();
+        }
+
+        document.addEventListener("DOMContentLoaded", updateCartDisplay);
+    </script>
+</body>
+</html>

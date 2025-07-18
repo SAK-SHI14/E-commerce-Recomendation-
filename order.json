@@ -1,0 +1,102 @@
+[
+    {
+      "order_id": "ORD001",
+      "user_id": "USER001",
+      "items": [
+        { "sku_id": "SAR066", "quantity": 1 },
+        { "sku_id": "SAR152", "quantity": 1 }
+      ],
+      "order_date": "2025-04-02"
+    },
+    {
+      "order_id": "ORD002",
+      "user_id": "USER002",
+      "items": [
+        { "sku_id": "BL001-50PINK", "quantity": 1 },
+        { "sku_id": "BTM038-PP-XXXL", "quantity": 1 }
+      ],
+      "order_date": "2025-04-03"
+    },
+    {
+      "order_id": "ORD003",
+      "user_id": "USER003",
+      "items": [
+        { "sku_id": "JNE3648-TP-N-M", "quantity": 1 },
+        { "sku_id": "0300-TP-XXXL", "quantity": 1 }
+      ],
+      "order_date": "2025-04-04"
+    },
+    {
+      "order_id": "ORD004",
+      "user_id": "USER001",
+      "items": [
+        { "sku_id": "BL001-50PINK", "quantity": 2 },
+        { "sku_id": "JNE3648-TP-N-M", "quantity": 1 }
+      ],
+      "order_date": "2025-04-05"
+    },
+    {
+      "order_id": "ORD005",
+      "user_id": "USER002",
+      "items": [
+        { "sku_id": "SAR066", "quantity": 1 },
+        { "sku_id": "0300-TP-XXXL", "quantity": 1 }
+      ],
+      "order_date": "2025-04-06"
+    },
+    {
+      "order_id": "ORD006",
+      "user_id": "USER003",
+      "items": [
+        { "sku_id": "BTM038-PP-XXXL", "quantity": 1 },
+        { "sku_id": "SAR152", "quantity": 1 }
+      ],
+      "order_date": "2025-04-07"
+    },
+    {
+      "order_id": "ORD007",
+      "user_id": "USER001",
+      "items": [
+        { "sku_id": "0300-TP-XXXL", "quantity": 1 },
+        { "sku_id": "BTM038-PP-XXXL", "quantity": 1 }
+      ],
+      "order_date": "2025-04-08"
+    },
+    {
+      "order_id": "ORD008",
+      "user_id": "USER002",
+      "items": [
+        { "sku_id": "JNE3648-TP-N-M", "quantity": 1 },
+        { "sku_id": "SAR066", "quantity": 1 }
+      ],
+      "order_date": "2025-04-09"
+    },
+    {
+      "order_id": "ORD009",
+      "user_id": "USER001",
+      "items": [
+        { "sku_id": "BL003-50BLACK", "quantity": 1 },
+        { "sku_id": "SET264-KR-NP-XL", "quantity": 1 }
+      ],
+      "order_date": "2025-04-10"
+    },
+    {
+      "order_id": "ORD010",
+      "user_id": "USER001",
+      "items": [
+        { "sku_id": "JNE3371-KR-XL", "quantity": 1 },
+        { "sku_id": "PJNE3368-KR-6XL", "quantity": 1 }
+      ],
+      "order_date": "2025-04-11"
+    },
+    {
+      "order_id": "ORD011",
+      "user_id": "USER001",
+      "items": [
+        { "sku_id": "BL110-XL", "quantity": 1 },
+        { "sku_id": "BL003-50BLACK", "quantity": 1 }
+      ],
+      "order_date": "2025-04-12"
+    }
+]
+  

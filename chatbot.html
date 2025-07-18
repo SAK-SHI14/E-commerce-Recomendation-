@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<style>
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbot-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+.chatbot-button:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+.chatbot-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px;
+    height: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.chatbot-window[style*="display: flex"] {
+    transform: translateY(0);
+}
+
+.chatbot-header {
+    padding: 15px;
+    background: #007bff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #f1f1f1;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 3px;
+}
+
+.chatbot-input {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.chatbot-input input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.chatbot-input button {
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-weight: 500;
+}
+
+.chatbot-input button:hover {
+    background: #0056b3;
+}
+
+.chatbot-input button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-radius: 15px;
+    max-width: 85%;
+    word-wrap: break-word;
+    -webkit-user-select: text;
+    user-select: text;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.user-message {
+    background: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+.bot-message {
+    background: #f1f1f1;
+    color: black;
+}
+
+.close-chatbot {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    transition: opacity 0.2s ease;
+}
+
+.close-chatbot:hover {
+    opacity: 0.8;
+}
+
+.close-chatbot:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: calc(100% - 40px);
+        height: calc(100% - 120px);
+        right: 20px;
+    }
+}
+
+.message.error {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.message.loading {
+    background: #f5f5f5;
+    color: #666;
+    font-style: italic;
+}
+
+@keyframes thinking {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.message.loading {
+    animation: thinking 1.5s infinite;
+}
+
+/* Markdown Styles */
+.message.bot-message {
+    background: #f1f1f1;
+    color: black;
+}
+
+.message.bot-message p {
+    margin: 0 0 10px 0;
+}
+
+.message.bot-message p:last-child {
+    margin-bottom: 0;
+}
+
+.message.bot-message ul, 
+.message.bot-message ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.message.bot-message li {
+    margin: 5px 0;
+}
+
+.message.bot-message strong {
+    font-weight: 600;
+    color: #0056b3;
+}
+
+.message.bot-message em {
+    font-style: italic;
+}
+
+.message.bot-message code {
+    background: #e9ecef;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.message.bot-message pre {
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+.message.bot-message pre code {
+    background: none;
+    padding: 0;
+}
+
+.message.bot-message blockquote {
+    border-left: 3px solid #007bff;
+    margin: 10px 0;
+    padding-left: 10px;
+    color: #666;
+}
+
+.message.bot-message a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.message.bot-message a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<div class="chatbot-container">
+    <button 
+        class="chatbot-button" 
+        id="chatButton" 
+        onclick="toggleChat()"
+        aria-label="Open chat window"
+        title="Open chat window">
+        <i class="fas fa-comments" aria-hidden="true"></i>
+    </button>
+    <div class="chatbot-window" id="chatbotWindow" role="dialog" aria-label="Chat window">
+        <div class="chatbot-header">
+            <span>E-Commerce Assistant</span>
+            <span 
+                class="close-chatbot" 
+                id="closeButton" 
+                onclick="toggleChat()"
+                role="button"
+                aria-label="Close chat window"
+                title="Close chat window">×</span>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages" role="log" aria-live="polite">
+            <div class="message bot-message">Hello! I'm your E-Commerce Assistant. I can help you with:
+            <br>• Product information and recommendations
+            <br>• Order status and tracking
+            <br>• Payment and shipping queries
+            <br>• Returns and refunds
+            <br>• General shopping assistance
+            <br><br>How can I help you today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Type your message..." 
+                onkeypress="handleKeyPress(event)"
+                aria-label="Message input"
+                title="Type your message here">
+            <button 
+                id="sendButton" 
+                onclick="sendMessage()"
+                aria-label="Send message"
+                title="Send message">Send</button>
+        </div>
+    </div>
+</div> 
